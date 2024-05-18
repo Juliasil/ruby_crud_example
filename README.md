@@ -1,2 +1,2 @@
 # ruby_crud_example
-Um CRUD simples desenvolvido para fins educacionais pelo SkillerDev no Módulo 8, utilizando Ruby para operações básicas de criação, leitura, atualização e exclusão (CRUD) em arquivos CSV.
+A simple CRUD developed for educational purposes by SkillerDev in Module 8, using Ruby for basic create, read, update and delete (CRUD) operations on CSV files.
