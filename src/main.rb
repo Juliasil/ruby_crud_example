@@ -60,8 +60,30 @@ print "Enter id in of delete: "
     file.write(table.to_csv)
   end
 end
-def  update_entry(file_path);end
 
+def  update_entry(file_path)
+  print "Enter with id for update: "
+  id = gets.chomp.to_i
+
+  table = CSV.table(file_path)
+
+  table.each do |row|
+    if row[:id] == id
+      print "Enter with name: "
+      row[:name] = gets.chomp
+      print "Enter with age: "
+      row[:age] = gets.chomp
+      print "Enter with address: "
+      row[:address] = gets.chomp
+      print "Enter with salary: "
+      row[:salary] = gets.chomp
+    end
+  end
+
+  File.open(file_path, 'w') do |file|
+    file.write(table.to_csv)
+  end
+end
 file_path = '../data/studentskiller.csv'
 puts 'Enter the file path: '
 file_path = gets.chomp
