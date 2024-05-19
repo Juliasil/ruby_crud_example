@@ -13,12 +13,44 @@ def add_entry(file_path)
   end
 end
 
-def view_entry(file_path);end
+def view_entry(file_path)
+  data = CSV.read(file_path)
+  first_row_size = data[0].size
+  columns = (0...first_row_size).to_a
+
+  widths = columns.map do |column|
+  data.map { |row| row[column].size}.max
+  end
+  
+
+  data.first.each_with_index do |column, index|
+
+    if column.strip.size <= widths[index] /2
+    just_space_column = column.rjust(widths[index])
+    else
+    just_space_column = column.ljust(widths[index])
+    end
+
+    print "#{just_space_column} | "
+  end
+  puts
+
+  columns_with_header = data[1..-1]
+
+  columns_with_header.each do |row|
+    row.each_with_index do |column, index|
+      just_space_column = column.ljust(widths[index])
+      print column.ljust(widths[index]) + ' | '
+    end
+    puts
+  end
+end
 def delete_entry(file_path);end
 def  update_entry(file_path);end
 
-file_path = 'studentskiller.csv'
-
+file_path = '../data/studentskiller.csv'
+puts 'Enter the file path: '
+file_path = gets.chomp
 loop do 
   puts "\n1. Add a record"
   puts "2. View a record"
