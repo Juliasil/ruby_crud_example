@@ -19,7 +19,7 @@ def view_entry(file_path)
   columns = (0...first_row_size).to_a
 
   widths = columns.map do |column|
-  data.map { |row| row[column].size}.max
+    data.map { |row| row[column].size}.max
   end
   
 

@@ -1,0 +1,49 @@
+{
+  "columns": [
+    {
+      "field": "id",
+      "title": "id",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 77
+    },
+    {
+      "field": "name",
+      "title": "name",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "string",
+      "headerSort": true,
+      "width": 101
+    },
+    {
+      "field": "age",
+      "title": "age",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 89
+    },
+    {
+      "field": "address",
+      "title": "address",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "string",
+      "headerSort": true,
+      "width": 115
+    },
+    {
+      "field": "salary",
+      "title": "salary",
+      "minWidth": 40,
+      "resizable": true,
+      "sorter": "number",
+      "headerSort": true,
+      "width": 941
+    }
+  ]
+}

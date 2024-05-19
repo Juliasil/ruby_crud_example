@@ -1,0 +1,32 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "age",
+      "type": "integer",
+      "format": "default"
+    },
+    {
+      "name": "address",
+      "type": "string",
+      "format": "default"
+    },
+    {
+      "name": "salary",
+      "type": "number",
+      "format": "default"
+    }
+  ],
+  "missingValues": [
+    ""
+  ]
+}
