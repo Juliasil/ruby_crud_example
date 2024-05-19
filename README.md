@@ -16,4 +16,5 @@ A simple CRUD developed for educational purposes by SkillersDev in Module 8, usi
 
    
 
+![Captura de tela de 2024-05-19 08-55-42](https://github.com/Juliasil/ruby_crud_example/assets/85976415/0dd4dfbf-a542-4a0f-970e-e54bdd76951c)
 
