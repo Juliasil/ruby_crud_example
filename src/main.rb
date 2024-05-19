@@ -45,7 +45,21 @@ def view_entry(file_path)
     puts
   end
 end
-def delete_entry(file_path);end
+def delete_entry(file_path)
+
+print "Enter id in of delete: "
+  id = gets.chomp.to_i
+
+  table = CSV.table(file_path)
+
+  table.delete_if do |row|
+    row[:id] == id
+  end
+
+  File.open(file_path, 'w') do |file|
+    file.write(table.to_csv)
+  end
+end
 def  update_entry(file_path);end
 
 file_path = '../data/studentskiller.csv'
